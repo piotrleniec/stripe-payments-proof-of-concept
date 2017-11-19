@@ -8,12 +8,12 @@
       <div class="form-group">
         <div class="row">
           <div class="col-xs-8">
-            <label for="cvc">Expiration Date</label>
-            <input id="cvc" class="form-control" v-model="expDate" />
+            <label for="exp-date">Expiration Date</label>
+            <expiration-date-input v-model="expDate" />
           </div>
           <div class="col-xs-4">
-            <label for="exp-month">Security Code</label>
-            <input id="exp-month" class="form-control" v-model="cvc" />
+            <label for="cvc">Security Code</label>
+            <input id="cvc" class="form-control" v-model="cvc" />
           </div>
         </div>
       </div>
@@ -23,14 +23,19 @@
 </template>
 
 <script>
+import ExpirationDateInput from './CreditCardForm/ExpirationDateInput.vue'
+
 export default {
   name: 'credit-card-form',
   data() {
     return {
       number: null,
-      expDate: null,
+      expDate: { month: '', year: '' },
       cvc: null
     }
+  },
+  components: {
+    'expiration-date-input': ExpirationDateInput
   }
 }
 </script>
