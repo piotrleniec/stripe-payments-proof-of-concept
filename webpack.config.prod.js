@@ -13,6 +13,16 @@ module.exports = {
         test: /\.vue/,
         loader: 'vue-loader',
         options: { extractCSS: true }
+      },
+      {
+        test: /\.css/,
+        use: ExtractTextPlugin.extract({
+          use: 'css-loader'
+        })
+      },
+      {
+        test: /\.(ttf|woff2|woff|eot|svg)/,
+        loader: 'file-loader'
       }
     ]
   },
