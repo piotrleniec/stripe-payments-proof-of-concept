@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Sinatra Vue Boilerplate</title>
+    <% if env == 'production' %><link rel="stylesheet" href="/assets/bundle.css"><% end %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <% if env == 'development' %><script src="//localhost:8080/assets/bundle.js"></script><% end %>
+    <% if env == 'production' %><script src="/assets/bundle.js"></script><% end %>
+  </body>
+</html>
