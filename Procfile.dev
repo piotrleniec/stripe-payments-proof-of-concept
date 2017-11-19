@@ -1,0 +1,2 @@
+sinatra: env APP_ENV=development ruby server.rb
+webpack-dev-server: npm run dev
