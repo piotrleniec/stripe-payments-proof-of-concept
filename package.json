@@ -1,0 +1,17 @@
+{
+  "name": "sinatra-vue-boilerplate",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrleniec/sinatra-vue-boilerplate.git"
+  },
+  "author": "Piotr Leniec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotrleniec/sinatra-vue-boilerplate/issues"
+  },
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.5.1"
+  }
+}
