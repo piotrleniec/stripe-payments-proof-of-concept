@@ -1,14 +1,14 @@
 {
-  "name": "sinatra-vue-boilerplate",
+  "name": "stripe-payments-proof-of-concept",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piotrleniec/sinatra-vue-boilerplate.git"
+    "url": "git+https://github.com/piotrleniec/stripe-payments-proof-of-concept.git"
   },
   "author": "Piotr Leniec",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piotrleniec/sinatra-vue-boilerplate/issues"
+    "url": "https://github.com/piotrleniec/stripe-payments-proof-of-concept/issues"
   },
   "engines": {
     "node": "8.9.1",
