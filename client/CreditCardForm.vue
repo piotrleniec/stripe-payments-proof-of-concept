@@ -2,8 +2,8 @@
   <div class="panel panel-primary">
     <div class="panel-body">
       <div class="form-group">
-        <label for="number">Card Number</label>
-        <input id="number" class="form-control" v-model="number" />
+        <label for="card-number">Card Number</label>
+        <card-number-input v-model="cardNumber" />
       </div>
       <div class="form-group">
         <div class="row">
@@ -24,18 +24,20 @@
 
 <script>
 import ExpirationDateInput from './CreditCardForm/ExpirationDateInput.vue'
+import CardNumberInput from './CreditCardForm/CardNumberInput.vue'
 
 export default {
   name: 'credit-card-form',
   data() {
     return {
-      number: null,
+      cardNumber: '',
       expDate: { month: '', year: '' },
       cvc: null
     }
   },
   components: {
-    'expiration-date-input': ExpirationDateInput
+    'expiration-date-input': ExpirationDateInput,
+    'card-number-input': CardNumberInput
   }
 }
 </script>
