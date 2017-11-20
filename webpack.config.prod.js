@@ -12,7 +12,12 @@ module.exports = {
       {
         test: /\.vue/,
         loader: 'vue-loader',
-        options: { extractCSS: true }
+        options: {
+          extractCSS: true,
+          loaders: {
+            js: 'babel-loader'
+          }
+        }
       }
     ]
   },
